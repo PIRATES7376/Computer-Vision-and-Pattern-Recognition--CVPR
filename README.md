@@ -1,26 +1,37 @@
-# k-NN Image Classifier (Dogs/Cats/Pandas) — Colab
-This repository contains a from-scratch implementation of a k-Nearest Neighbors (k-NN) image classifier in NumPy, developed for a CVPR lab assignment. It loads exactly 100 images per class (dog, cat, panda) from Google Drive, preprocesses them to 32×32 grayscale float32 vectors, and evaluates k=1...20 using stratified 5-fold cross-validation, reporting mean±std accuracy and an accuracy-vs-k plot. The project deliberately avoids scikit-learn’s KNeighborsClassifier (using scikit-learn only for StratifiedKFold) to make the distance computation, neighbor selection, and majority-vote mechanics explicit.
+📖 Overview
 
-Goal: From-scratch k-Nearest Neighbors (NumPy) baseline on a 3-class dataset (dog, cat, panda) with accuracy-vs-k analysis.
+This repository is a comprehensive deep learning & machine learning playground featuring implementations and experiments across popular algorithms and frameworks.
 
-# 🎯 Objectives
-*Loads 100 images per class from Google Drive (folders containing dog, cat, panda).
+It includes classical ML models (KNN, NN) as well as modern deep learning architectures (CNNs, PyTorch/TensorFlow models, and Mamba-based networks).
 
-*Preprocesses to 32×32 grayscale, float32, [0,1], then flattens.
+✅ Great for learning, research, and prototyping.
+✅ Modular structure for experimenting with multiple methods.
+✅ Works with both TensorFlow and PyTorch backends.
 
-*Runs Stratified 5-Fold Cross-Validation for k = 2…20.
+🚀 Implemented Methods
 
-*Plots accuracy vs k and prints the best k.
+📊 Classical ML
 
-# How to run (Colab)
-Open the notebook in Colab.
+K-Nearest Neighbors (KNN)
 
-drive.mount('/content/drive')
+Basic Neural Networks (NN)
 
-Set your dataset path:
-dataset_dir = "/content/drive/MyDrive/...."
+🤖 Deep Learning (TensorFlow + Keras)
 
-# Outputs
-Plot: Accuracy vs k (mean ± std)
+Convolutional Neural Networks (CNN)
 
-Console: Best k
+LeNet / MNIST classifiers
+
+Custom preprocessing + training pipelines
+
+🔥 Deep Learning (PyTorch)
+
+MNIST classification with PyTorch models
+
+CNN architectures in PyTorch
+
+🐍 Advanced Models
+
+Mamba architecture (state space models for sequence learning)
+
+Research experiments combining classical + modern DL
